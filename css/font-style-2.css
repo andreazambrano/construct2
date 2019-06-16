@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700');
-
+/*@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700');
+*/
 body{
-font-family: 'Rubik',Arial, Helvetica, sans-serif;
+font-family: 'BodoniBook',Arial, Helvetica, sans-serif;
 font-size:14px;
 font-weight:300;
 }
@@ -18,7 +18,7 @@ a.btn,
 .btn-line,
 a.btn-line,
 #filters{
-font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+font-family: 'BodoniBook',Arial, Helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,
