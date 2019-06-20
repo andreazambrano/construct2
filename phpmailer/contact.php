@@ -6,18 +6,18 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'thetixs.com';       //  ssl://smtp.gmail.com          // Specify main and backup SMTP servers
+$mail->Host = 'constructoraics.cl';       //  ssl://smtp.gmail.com          // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'developer@thetixs.com';                      // SMTP username
-$mail->Password = 'uoW9developer';                           // SMTP password
+$mail->Username = 'mjvillanueva@constructoraics.cl';                      // SMTP username
+$mail->Password = 'tarragona';                           // SMTP password
 $mail->SMTPSecure = 'ssl';  //TLS                       // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;          //587                          // TCP port to connect to
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('contacto@alena.cl', 'A|Leña');
+$mail->setFrom('mjvillanueva@constructoraics.cl', 'A|Leña');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('andreazambrano10@gmail.com');              // Name is optional
+$mail->addAddress('contacto@aleña.cl');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
@@ -37,24 +37,24 @@ $mail->Body    =
 
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['name'].'</b>, 
+           <b>'.$_POST['name'].'</b>. 
                     
           </div>
           
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['email'].'</b>, 
+           <b>'.$_POST['email'].'</b>.
                     
           </div>
 
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['phone'].'</b>,                     
+           <b>'.$_POST['phone'].'</b>.                    
           </div>
 
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['message'].'</b>,                     
+           <b>'.$_POST['message'].'</b>.                    
           </div>
 
           <div style="border-radius:10px; width: 320PX; box-shadow:5px 5px 17px 0px rgba(44, 50, 50, 0.14);">
