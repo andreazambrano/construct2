@@ -1057,6 +1057,7 @@ jQuery(document).ready(function () {
 			});
 			
         }); // document scroll end //
+
 		
 		$.stellar({
                  horizontalScrolling: false,

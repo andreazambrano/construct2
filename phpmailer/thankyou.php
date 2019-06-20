@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="HandheldFriendly" content="true" />
-    <title>Gracias por contactarme</title>
+    <title>Gracias por contactarnos, Recibira respuesta a la brevedad posible.</title>
     <link href='' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://submit.jotform.me/js/prototype.js"></script>
     <script type="text/javascript" src="jquery.min.js"></script> 
@@ -14,7 +14,7 @@
             var url='../index.html'; 
             function countdown(){
                 setTimeout(countdown, 1000);
-                $('#box').html("Andrea Zambrano. &nbsp;<h3>" + number + "</h3>&nbsp;seg .");
+                $('#box').html("A | Leña. Quinchos de autor...... &nbsp;<h3>" + number + "</h3>&nbsp;seg .");
                 number--;
                    if(number<0){
                 window.location=url;

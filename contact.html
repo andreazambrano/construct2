@@ -123,16 +123,23 @@
 
         <!-- content begin -->
         <div id="content" class="no-top">
-            <section class="no-top" aria-label="map-container">
-                <div id="map"></div>
-            </section>
 
+        <section class="no-top" aria-label="map-container">
+                <div class="col-med-12" align="center">
+                <h2 class="title" >Ubicanos en el mapa</h2><br>
+                <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.706576138253!2d-70.57079628480122!3d-33.43089348077945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceff3bff8953%3A0x8bcea4591afec045!2sAv.+Francisco+Bilbao+5418%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana%2C+Chile!5e0!3m2!1ses-419!2sve!4v1561025594791!5m2!1ses-419!2sve" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                </div>
+        </section>
+            
+        <section>
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-8">
                         <h3>Escríbenos</h3>
-                        <form method="post" action='phpmailer/contact.php'>
+                        <form name="contactForm" id='contact_form' method="post" action='phpmailer/contact.php'>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div id='name_error' class='error'>Please enter your name.</div>
@@ -158,7 +165,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <p id='submit'>
+                                     <p id='submit'>
                                         <input type='submit' id='send_message' value='Enviar' class="btn btn-line">
                                     </p>
                                     <div id='mail_success' class='success'>Su mensaje ha sido enviado exitosamente</div>
@@ -182,17 +189,11 @@
                             </address>
                         </div>
 
-
-
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
+        </section>
+            
         </div>
 
         <!-- footer begin -->
@@ -247,10 +248,6 @@
 
     </div>
 
-    <!-- style switcher
-    ================================================== -->
-    
-
     
 
     <!-- Javascript Files
@@ -263,10 +260,8 @@
     <script src="js/jquery.scrollto.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/jquery.countTo.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc5d1RS_0yWJ1Hyw2hGWfbRZ9KKaxFAZo"></script>
-    <script src="js/map.js"></script>
+    <script src="js/classie.js"></script><!-- 
+    <script src="js/validation.js"></script>  -->
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/enquire.min.js"></script>
