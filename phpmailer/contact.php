@@ -15,9 +15,9 @@ $mail->Port = 465;          //587                          // TCP port to connec
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('developer@thetixs.com', 'A|Le&ntilde;a');
+$mail->setFrom('developer@thetixs.com', 'A|Lena');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('andreazambrano10@gmail.com');              // Name is optional
+$mail->addAddress('contacto@alena.cl');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
@@ -26,37 +26,38 @@ $mail->addAddress('andreazambrano10@gmail.com');              // Name is optiona
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Contacto';
+$mail->Subject = 'Contacto by A Lena';
 $mail->Body    = 
    
     '<div align="center">
-            <div style="background-color:#A25E5C;">
-          <img src="images/logo-2.png">
-           </div>
 
-          <div>
-          <p align="center" style="color:#00000" padding:20px;> Hola, estimados arquitectos y constructores hemos recibido un mensaje de aleña.cl </p>
+          <div style="background-color:#A25E5C;">
+            <img src="http://www.tuw3bsite.com.ve/ManuelVillanueva/constructoras/construct2/images/logo-3.png">
+          </div>
+
+
+          <div align="center"  padding:20px; style="font-family: Bodoni;"> Hola, estimados amigos de A Leña, hemos recibido un mensaje desde el portal web <b>aleña.cl</b>
           </div>
 
           <div style="color:#00000; padding:20px;" align="left">
-            <br/>
-           <b>'.$_POST['name'].'</b>. 
+            
+           <b>'.$_POST['name'].'</b>.
                     
           </div>
           
           <div style="color:#00000; padding:20px;" align="left">
-            <br/>
+          
            <b>'.$_POST['email'].'</b>.
                     
           </div>
 
           <div style="color:#00000; padding:20px;" align="left">
-            <br/>
+            
            <b>'.$_POST['phone'].'</b>.                    
           </div>
 
           <div style="color:#00000; padding:20px;" align="left">
-            <br/>
+            
            <b>'.$_POST['message'].'</b>.                    
           </div>
 
@@ -66,6 +67,10 @@ $mail->Body    =
             </table>
           </div>
 
+        <div style="background-color:#A25E5C;">
+        <img src="http://www.tuw3bsite.com.ve/ManuelVillanueva/constructoras/construct2/images/ttd.png">
+        <div
+
         
       </div>';
 //file_get_contents('template-guest.php');
@@ -73,6 +78,8 @@ $mail->Body    =
 
 if(!$mail->send()) {
     echo 'Su Mensaje no ha sido enviado. Verifique los datos';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+
 }
 else {
     header('location: thankyou.php');
