@@ -15,7 +15,7 @@ $mail->Port = 465;          //587                          // TCP port to connec
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('developer@thetixs.com', 'A|Leña');
+$mail->setFrom('developer@thetixs.com', 'A|Le&ntilde;a');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
 $mail->addAddress('andreazambrano10@gmail.com');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
@@ -29,8 +29,14 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Contacto';
 $mail->Body    = 
    
-    '<div align="center" style="background-color:#A25E5C;">
-          
+    '<div align="center">
+            <div style="background-color:#A25E5C;">
+          <img src="images/logo-2.png">
+           </div>
+
+          <div>
+          <p align="center" style="color:#00000" padding:20px;> Hola, estimados arquitectos y constructores hemos recibido un mensaje de aleña.cl </p>
+          </div>
 
           <div style="color:#00000; padding:20px;" align="left">
             <br/>
