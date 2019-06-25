@@ -6,18 +6,18 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'constructoraics.cl';       //  ssl://smtp.gmail.com          // Specify main and backup SMTP servers
+$mail->Host = 'thetixs.com';       //  ssl://smtp.gmail.com          // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'mjvillanueva@constructoraics.cl';                      // SMTP username
-$mail->Password = 'tarragona';                           // SMTP password
+$mail->Username = 'developer@thetixs.com';                      // SMTP username
+$mail->Password = 'uoW9developer';                           // SMTP password
 $mail->SMTPSecure = 'ssl';  //TLS                       // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;          //587                          // TCP port to connect to
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('mjvillanueva@constructoraics.cl', 'A|Leña');
+$mail->setFrom('developer@thetixs.com', 'A|Leña');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('contacto@aleña.cl');              // Name is optional
+$mail->addAddress('andreazambrano10@gmail.com');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
@@ -29,30 +29,27 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Contacto';
 $mail->Body    = 
    
-    '<div align="center" style="background-color:#f6f8f8;">
-        <div align="center" style="display:inline-block;
-                                  height:auto;
-                                  width:100%;">
+    '<div align="center" style="background-color:#A25E5C;">
           
 
-          <div style="color:#e44c2a; padding:20px;" align="left">
+          <div style="color:#00000; padding:20px;" align="left">
             <br/>
            <b>'.$_POST['name'].'</b>. 
                     
           </div>
           
-          <div style="color:#e44c2a; padding:20px;" align="left">
+          <div style="color:#00000; padding:20px;" align="left">
             <br/>
            <b>'.$_POST['email'].'</b>.
                     
           </div>
 
-          <div style="color:#e44c2a; padding:20px;" align="left">
+          <div style="color:#00000; padding:20px;" align="left">
             <br/>
            <b>'.$_POST['phone'].'</b>.                    
           </div>
 
-          <div style="color:#e44c2a; padding:20px;" align="left">
+          <div style="color:#00000; padding:20px;" align="left">
             <br/>
            <b>'.$_POST['message'].'</b>.                    
           </div>
@@ -63,15 +60,13 @@ $mail->Body    =
             </table>
           </div>
 
-        </div>
-      </div>
- ';
+        
+      </div>';
 //file_get_contents('template-guest.php');
 // $mail->AltBody = 'Hello';
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo 'Su Mensaje no ha sido enviado. Verifique los datos';
 }
 else {
     header('location: thankyou.php');
