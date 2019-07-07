@@ -2,7 +2,7 @@
 
 body{
 font-family: 'BodoniBook',Arial, Helvetica, sans-serif;
-font-size:14px;
+font-size:16px;
 font-weight:300;
 }
 
@@ -29,7 +29,7 @@ text-transform:none;
 }
 
 .blog-list h3, .blog-read h3{
-font-size:22px;
+font-size:20px;
 }
 
 .ultra-big-white{
